@@ -1,0 +1,29 @@
+@use"./colors";
+.btn{
+    display:inline-block;
+    text-decoration: none;
+    height: 4.3rem;
+    line-height: 4.3rem;
+    width: 150px;
+    padding: 0, 2.0rem;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    border:none;
+    text-transform: capitalize;
+    text-align: center;
+
+&-default{
+    background: colors.$green-500;
+    color:colors.$white;
+
+
+}
+&-dark{
+    background-color: colors.$black;
+    color:colors.$white
+
+}
+
+}

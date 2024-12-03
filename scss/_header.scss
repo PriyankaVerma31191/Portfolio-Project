@@ -1,0 +1,70 @@
+@use"./mixins" as *;
+@use"./variable" as*;
+.header{
+    margin-top: 7rem;
+    position: relative;
+    background-color: rgb(248, 245, 245);
+  
+
+   &__image {
+    margin-top: 20%;
+    
+    background-size: cover;
+    height: 732px;
+   }
+        
+
+    &__data{
+        
+        width: 100%;
+        height: calc(100vh - 10rem);
+        @include flexbox(null, center);
+      
+    
+
+&__contents{
+   
+  
+    
+    &__top{
+        font-size: 1.7rem;
+        text-transform: capitalize;
+        color: black;
+        font-weight: 500;
+       
+       
+      }  
+        
+    
+&__heading {
+    margin-top: 1.5rem;
+    font-size: 4.5rem;
+    font-weight: 900;
+   
+    }
+
+&__bottom{
+    margin-top: 1.5rem;
+    text-transform: capitalize;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: black;
+    line-height: 5rem;;
+
+}
+
+}
+    }
+    
+
+
+
+
+@include responsive(sm){
+    .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+}

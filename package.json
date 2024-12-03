@@ -1,0 +1,14 @@
+{
+  "name": "portfolioproject",
+  "version": "1.0.0",
+  "description": "Portfolio Website with Html and Sass",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass app.scss app.css --watch --no-source-map "
+  },
+  "author": "Priyanka Verma",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.81.0"
+  }
+}

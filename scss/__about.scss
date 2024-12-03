@@ -1,0 +1,63 @@
+@use"./variable" as *;
+@use"./colors" as *;
+
+.about{
+    padding: 8rem, 0;
+    &__image{
+        width:30rem;
+        height:30rem;
+        position: relative;
+        img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 50%;
+
+        }
+    
+    &__small{
+        position: absolute;
+    top:-3rem;
+    left: -3rem;
+        width:15rem;
+        height:15rem;
+        img{
+            width:100%;
+            height:100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: .7rem solid $green-50;
+            
+        }
+    }
+}&__info{
+    margin-top: 1.5rem;
+    &__message{
+        font-size: 1.5rem;
+        line-height: 2.8rem;
+        color: $black;
+
+    }
+&__block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding-bottom:.5rem;
+    border-bottom: .1rem dashed $gray-300;
+    &__left{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color:$black;
+        text-transform: capitalize;
+
+    }
+    &__right{
+        font-size: 1.3rem;
+        font-weight: 500;
+        color:$gray-700;
+    }
+}
+}
+}
+
